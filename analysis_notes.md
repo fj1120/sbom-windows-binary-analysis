@@ -19,3 +19,9 @@
 
 This project represents an initial exploration into automated binary analysis for
 software supply chain security.
+
+## Key Technical Decisions
+
+- Used static PE import table analysis to identify third-party dependencies without executing binaries.
+- Prioritized deterministic and reproducible SBOM generation over dynamic runtime coverage.
+- Designed the SBOM output structure to be easily extensible for future inclusion of versioning, signatures, and vulnerability mapping.
